@@ -9,13 +9,14 @@ function onSubmit() {
     short.style.display = "none";
     long.style.display = "flex";
     const checkedLength = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    score.innerHTML = checkedLength;
+    const calculation = document.querySelectorAll('input[type="checkbox"]').length - checkedLength;
+    score.innerHTML = calculation;
 
-    if (checkedLength >= 31) {
+    if (calculation >= 31) {
         reaction.innerHTML = "You're starting it right! You have a journey ahead of you and we're happy to be part of it."
-    } else if (checkedLength >= 21) {
+    } else if (calculation >= 21) {
         reaction.innerHTML = "Growth check! Work those creative muscles. You're doing great fam, we're rooing for you!"
-    } else if (checkedLength >= 11) {
+    } else if (calculation >= 11) {
         reaction.innerHTML = "Wow, you're certified UX learner! Bob Ross must be paiting yet another masterpiece in you."
     } else {
         reaction.innerHTML = "Talented, brilliant, incredible, amazing, show stopping, spectacular, never the same, totally unique, completely not ever been done before - you live and breather UX."
