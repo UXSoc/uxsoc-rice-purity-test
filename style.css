@@ -15,11 +15,24 @@ p {
 	padding: 0;
 }
 
+button {
+	padding: 8px 24px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 125%;
+	text-align: center;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+}
+
 .landing-wrapper-short {
 	height: 400px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.background {
 	background-image: url('./resources/images/background.png');
 	background-size: cover;
 	background-position: center;
@@ -27,10 +40,12 @@ p {
 }
 
 .landing-wrapper-long {
+	display: none;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center !important;
 }
 
 .landing-container h1 {
@@ -46,6 +61,16 @@ p {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 148%;
+	color: #ffffff;
+}
+
+.landing-container h3 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 148%;
+	width: 50%;
+	margin: 24px auto;
 	color: #ffffff;
 }
 
@@ -143,16 +168,6 @@ p {
 	margin-top: 45px;
 }
 
-button {
-	padding: 8px 24px;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 125%;
-	text-align: center;
-	letter-spacing: 0.05em;
-}
-
 .primary {
 	background: linear-gradient(0deg, #04a0e8, #04a0e8), #ffffff;
 	border-radius: 8px;
@@ -231,4 +246,8 @@ button {
 	.button-wrapper {
 		justify-content: center;
 	}
+}
+
+.title-margin {
+	margin: 0 auto 16px auto !important;
 }

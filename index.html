@@ -51,7 +51,15 @@
 
 		<!-- <base href="/" /> -->
 
-		<link rel="icon" href="images/favicon.ico" />
+		<link
+			href="https://ricepuritytest.uxsociety.org/resources/images/favicon.ico"
+			rel="shortcut icon"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://ricepuritytest.uxsociety.org/resources/images/favicon.ico"
+			rel="apple-touch-icon"
+		/>
 
 		<!-- See https://goo.gl/OOhYW5 -->
 		<!-- <link rel="manifest" href="manifest.json" /> -->
@@ -132,17 +140,30 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<section class="landing-wrapper-short">
+		<section class="landing-wrapper-short background">
 			<div class="landing-container">
 				<img src="/resources/images/logo.svg" alt="logo" />
 				<h1>UXS Rice Purity Test</h1>
 				<h2>How far gone are you in UX? 🥳</h2>
 			</div>
 		</section>
-		<section class="body-wrapper">
+		<section class="landing-wrapper-long background">
+			<div class="landing-container">
+				<img src="/resources/images/logo.svg" alt="logo" />
+				<h3 class="title-margin">UXS Rice Purity Test</h3>
+				<h1>You scored...</h1>
+				<h1 id="score" />
+				<h3>
+					Not bad! There’s so much more to explore, and we’re right here with
+					you!
+				</h3>
+				<button class="primary" onclick="onAgain()">Take it Again</button>
+			</div>
+		</section>
+		<section class="body-wrapper" id="questionnaire">
 			<h3 class="title">Have you ever...</h3>
 			<div class="body-container">
-				<form action="#">
+				<div>
 					<label class="container"
 						>Experienced a UX/UI internship
 						<input type="checkbox" />
@@ -344,14 +365,15 @@
 						<span class="checkmark"></span>
 					</label>
 					<div class="button-wrapper">
-						<button class="primary">Calculate my Score</button>
-						<button class="secondary">Clear</button>
+						<button class="primary" onclick="onSubmit()">
+							Calculate my Score
+						</button>
+						<button class="secondary" onclick="onClear()">Clear</button>
 					</div>
-				</form>
+				</div>
 				<img src="./resources/images/side.png" alt="side" />
 			</div>
 		</section>
-		<script src="./resources/scripts/state.js"></script>
-		<script src="./resources/scripts/form.js"></script>
+		<script src="./resources/scripts/main.js"></script>
 	</body>
 </html>
