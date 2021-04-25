@@ -19,7 +19,7 @@ function onSubmit() {
     } else if (calculation >= 11) {
         reaction.innerHTML = "Wow, you're certified UX learner! Bob Ross must be paiting yet another masterpiece in you."
     } else {
-        reaction.innerHTML = "Talented, brilliant, incredible, amazing, show stopping, spectacular, never the same, totally unique, completely not ever been done before - you live and breather UX."
+        reaction.innerHTML = "Talented, brilliant, incredible, amazing, show stopping, spectacular, never the same, totally unique, completely not ever been done before - you live and breathe UX."
     }
 }
 
